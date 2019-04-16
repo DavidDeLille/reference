@@ -15,6 +15,11 @@ List functions written by the programmer (approx.):
 $ rabin2 -qs <binary> | grep -ve imp -e ' 0 '
 ```
 
+List symbols: (a = inlcude debug symbols, n = sort by address [numeric])
+```
+$ nm -a -n <binary>
+```
+
 Strings:  
 ```
 $ rabin2 -z <binary>
