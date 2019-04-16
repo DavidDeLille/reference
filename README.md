@@ -2,7 +2,7 @@
 Show binary protections:  
 ```
 rabin2 -I <binary>
-checksec <binary> 
+checksec -f <binary> 
 ```
 List functions:  
 ```$ rabin2 -i <binary> ```
