@@ -11,10 +11,14 @@ $ rabin2 -i <binary>
 ```
 
 List functions written by the programmer (approx.):  
-```$ rabin2 -qs <binary> | grep -ve imp -e ' 0 ' ```
+```
+$ rabin2 -qs <binary> | grep -ve imp -e ' 0 '
+```
 
 Strings:  
-```$ rabin2 -z <binary>```
+```
+$ rabin2 -z <binary>
+```
 
 # PDF files
 ## Tools
