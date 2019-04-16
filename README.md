@@ -6,7 +6,9 @@ $ checksec -f <binary>
 ```
 
 List functions:  
-```$ rabin2 -i <binary> ```
+```
+$ rabin2 -i <binary>
+```
 
 List functions written by the programmer (approx.):  
 ```$ rabin2 -qs <binary> | grep -ve imp -e ' 0 ' ```
