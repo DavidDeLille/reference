@@ -1,3 +1,18 @@
+# Exploit dev
+Show binary protections:  
+```
+rabin2 -I <binary>
+checksec <binary> 
+```
+List functions:  
+```$ rabin2 -i <binary> ```
+
+List functions written by the programmer (approx.):  
+```$ rabin2 -qs <binary> | grep -ve imp -e ' 0 ' ```
+
+Strings:  
+```$ rabin2 -z <binary>```
+
 # PDF files
 ## Tools
 https://blog.didierstevens.com/programs/pdf-tools/
