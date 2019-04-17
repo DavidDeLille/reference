@@ -25,6 +25,16 @@ Strings:
 $ rabin2 -z <binary>
 ```
 
+## Radare2
+| Function                  | Command |
+| ---                       | --- |
+| Open file                 | ```$ r2 <binary>``` |
+| Help                      | ```> ?``` |
+| Quit                      | ```> q``` |
+| Analyse all               | ```> aa``` |
+| List functions            | ```> afl``` |
+| Disassemble function      | ```> pdf [@ <function name>]``` |
+
 # PDF files
 ## Tools
 https://blog.didierstevens.com/programs/pdf-tools/
