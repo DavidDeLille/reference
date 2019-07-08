@@ -5,7 +5,7 @@ $ rabin2 -I <binary>
 $ checksec -f <binary>
 ```
 
-List functions:  
+List imported functions:  
 ```
 $ rabin2 -i <binary>
 ```
