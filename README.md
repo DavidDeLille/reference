@@ -25,6 +25,17 @@ Strings:
 $ rabin2 -z <binary>
 ```
 
+ROP gadgets:
+```
+$ python3 Ropper.py -f <file(s)>
+      --all
+      --search 'inc eax'
+      --jmp eax
+      --badbytes 000a0d
+      --console
+      --help
+```
+
 ## Radare2
 | Function                  | Command |
 | ---                       | --- |
