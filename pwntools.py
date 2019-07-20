@@ -5,6 +5,12 @@ context.log_level = 'debug'
 
 # binary
 proc = process('/bin/sh')
+# Attach the debugger
+gdb.attach(p, '''
+set follow-fork-mode child
+break *0x0804866c
+continue
+''')
 proc.sendline('sleep 3; echo hello world;')
 proc.recvline(timeout=1)
 proc.recvline(timeout=5)
