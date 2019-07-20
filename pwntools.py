@@ -27,7 +27,7 @@ print(disasm('6a0258cd80ebf9'.decode('hex')))
 
 # De Bruijn sequences
 print(cyclic(20))
-print cyclic_find('faab')
+print(cyclic_find('faab'))
 
 # ELF
 libc = ELF('./libc')
