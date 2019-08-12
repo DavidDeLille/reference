@@ -74,5 +74,5 @@ $ fcrackzip -u -D -p '/w/rockyou.txt' -v file.zip
 # Windows
 
 ## World-write/readable Directory, Windows Defender whitelist, and on UAC bypass list
-```\windows\System32\spool\drivers\color\```
+```C:\Windows\System32\spool\drivers\color\```
 
