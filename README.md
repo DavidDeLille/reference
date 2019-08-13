@@ -90,9 +90,9 @@ $ fcrackzip -u -D -p '/w/rockyou.txt' -v file.zip
 | Action            | Command |
 |---                |---|
 | New tmux          | ```tmux new -s ...``` |
+| List tmuxs        | ```tmux ls``` |
 | Attach to tmux    | ```tmux a -t ...``` |
 | Detatch from tmux | ```Ctrl+b d``` |
-| List tmuxs        | ```tmux ls``` |
 | Scroll mode       | ```Ctrl+b [``` |
 | Exit scroll mode  | ```q``` |
 
