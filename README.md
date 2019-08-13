@@ -87,15 +87,12 @@ $ fcrackzip -u -D -p '/w/rockyou.txt' -v file.zip
 ```rlwrap nc -nvlp 4444```
 
 # Tmux
-## create new tmux
-```tmux new -s ...```
-## attach to existing tmux
-```tmux a -t ...```
-## detatch from tmux
-```Ctrl+b d```
-## enter scroll mode
-```Ctrl+b [```
-## exit scroll mode
-```q```
-# list tmuxs
-```tmux ls```
+| Action            | Command |
+|---                |---|
+| New tmux          | ```tmux new -s ...``` |
+| Attach to tmux    | ```tmux a -t ...``` |
+| Detatch from tmux | ```Ctrl+b d``` |
+| List tmuxs        | ```tmux ls``` |
+| Scroll mode       | ```Ctrl+b [``` |
+| Exit scroll mode  | ```q``` |
+
