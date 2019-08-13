@@ -85,3 +85,17 @@ $ fcrackzip -u -D -p '/w/rockyou.txt' -v file.zip
 
 ## Arrow-support for nc
 ```rlwrap nc -nvlp 4444```
+
+# Tmux
+## create new tmux
+```tmux new -s ...```
+## attach to existing tmux
+```tmux a -t ...```
+## detatch from tmux
+```Ctrl+b d```
+## enter scroll mode
+```Ctrl+b [```
+## exit scroll mode
+```q```
+# list tmuxs
+```tmux ls```
