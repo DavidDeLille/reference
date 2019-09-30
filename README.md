@@ -49,7 +49,7 @@ $ python3 Ropper.py -f <file(s)>
 # Python
 
 ## Host webserver in current directory
-```python3 -m http.server```
+```python3 -m http.server```  
 ```python2 -m SimpleHTTPServer```
 
 # PDF files
