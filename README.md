@@ -122,6 +122,6 @@ apktool d package.apk
 
 ## Recompile APK
 ```
-apktool d package/
+apktool b package/
 mv package/dist/package.apk .
 ```
