@@ -134,5 +134,6 @@ mv package/dist/<package.apk> .
 | Display log            | ```adb logcat [-f log.txt]       ``` |
 | Download file          | ```adb pull <remote-file> <local>``` |
 | Upload file            | ```adb push <local-file> <remote>``` |
+
 [https://devhints.io/adb](https://devhints.io/adb)
 
