@@ -105,23 +105,32 @@ rlwrap nc -nvlp 4444
 ```
 
 # Tmux
-| Action            | Command |
-|---                |---|
+| Action            | Command               |
+|---                |---                    |
 | New tmux          | ```tmux new -s ...``` |
-| List tmuxs        | ```tmux ls``` |
-| Attach to tmux    | ```tmux a -t ...``` |
-| Detatch from tmux | ```Ctrl+b d``` |
-| Scroll mode       | ```Ctrl+b [``` |
-| Exit scroll mode  | ```q``` |
+| List tmuxs        | ```tmux ls```         |
+| Attach to tmux    | ```tmux a -t ...```   |
+| Detatch from tmux | ```Ctrl+b d```        |
+| Scroll mode       | ```Ctrl+b [```        |
+| Exit scroll mode  | ```q```               |
 
 # Android
 ## Decompile APK
 ```
-apktool d package.apk
+apktool d <package.apk>
 ```
 
 ## Recompile APK
 ```
 apktool b package/
-mv package/dist/package.apk .
+mv package/dist/<package.apk> .
 ```
+## ADB
+| Action                 | Command                              |
+|---                     |---                                   |
+| List connected devices | ```adb devices [-l]              ``` |
+| Install apk via adb    | ```adb install <package.apk>     ``` |
+| Spawn Android shell    | ```adb shell                     ``` |
+| Display log            | ```adb logcat [-f log.txt]       ``` |
+| Download file          | ```adb pull <remote-file> <local>``` |
+| Upload file            | ```adb push <local-file> <remote>``` |
