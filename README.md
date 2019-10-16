@@ -106,3 +106,12 @@ $ fcrackzip -u -D -p '/w/rockyou.txt' -v file.zip
 | Scroll mode       | ```Ctrl+b [``` |
 | Exit scroll mode  | ```q``` |
 
+# Android
+## Decompile APK
+```apktool d package.apk```
+
+## Recompile APK
+```
+apktool d package/
+mv package/dist/package.apk .
+```
