@@ -126,6 +126,8 @@ apktool b <package/>
 cp <package>/dist/<package.apk> .
 keytool -genkey -v -keystore debug.keystore -alias android -keyalg RSA -keysize 2048 -validity 20000
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore debug.keystore <package.apk> android
+OR
+jarsigner -verbose -sigalg SHA256withRSA -keystore debug.keystore <package.apk> android
 jarsigner -verify -verbose -certs <package.apk>
 zipalign -v 4 <package.apk> <package-align.apk>
 ```
