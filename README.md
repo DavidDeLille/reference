@@ -141,7 +141,7 @@ zipalign -v 4 <package.apk> <package-align.apk>
 [https://devhints.io/adb](https://devhints.io/adb)
 
 ## Objection
-| Action                 | Command                              |
-|---                     |---                                   |
-| Instrument app | ```objection patchapk --source <package.apk> ``` |
-| Start objection | ```objection explore``` |
+| Action          | Command                                          |
+|---              |---                                               |
+| Instrument app  | ```objection patchapk --source <package.apk> ``` |
+| Start objection | ```objection explore```                          |
