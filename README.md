@@ -123,7 +123,7 @@ apktool d <package.apk>
 ## Recompile APK
 ```
 apktool b <package/>
-mv <package>/dist/<package.apk> .
+cp <package>/dist/<package.apk> .
 keytool -genkey -v -keystore debug.keystore -alias android -keyalg RSA -keysize 2048 -validity 20000
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore debug.keystore <package.apk> android
 jarsigner -verify -verbose -certs <package.apk>
