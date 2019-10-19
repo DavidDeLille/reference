@@ -148,3 +148,13 @@ zipalign -v 4 <package.apk> <package-align.apk>
 |---              |---                                               |
 | Instrument app  | ```objection patchapk --source <package.apk> ``` |
 | Start objection | ```objection explore```                          |
+
+# SSRF
+
+## TCPdump
+Listen on port 443:  
+```
+tcpdump -i eth0 -nn -s0 -v port 443
+```
+
+https://hackertarget.com/tcpdump-examples/
