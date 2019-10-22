@@ -158,3 +158,9 @@ tcpdump -i eth0 -nn -s0 -v port 443
 ```
 
 https://hackertarget.com/tcpdump-examples/
+
+
+# Sqlmap
+```
+sqlmap -r <file.req> --risk=3 -- level=3
+```
