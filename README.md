@@ -186,3 +186,9 @@ runas:
 ```
 runas /netonly /user:domain\username powershell
 ```
+
+# John
+Apply rules to passwords:
+```
+john --stdout --wordlist=simpleps.txt --rules > complex-pws.txt
+```
