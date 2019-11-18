@@ -196,5 +196,5 @@ john --stdout --wordlist=simpleps.txt --rules > complex-pws.txt
 # Hydra
 SMB:
 ```
-hydra -L <usernames.txt> -P <passwords.txt> -o hydra-out.txt -u  smb://<IP>
+hydra -L <usernames.txt> -P <passwords.txt> -o hydra-out.txt -u smb://<IP>
 ```
