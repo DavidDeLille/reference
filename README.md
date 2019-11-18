@@ -174,3 +174,9 @@ Dangerous:
 ```
 ./Responder.py -I eth0 -wrfd
 ```
+
+# Hashcat
+Responder:
+```
+~/Tools/fanspeedSetNew.sh -s 100; ~/Tools/hashcat/hashcat64.bin -m 5600 -O -w 3 responder1.txt -o responder-cracked.txt /media/data/Wordlists/linkedin.txt -r ~/Tools/hashcat/rules/OneRuleToRuleThemAll.rule 
+```
