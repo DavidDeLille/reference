@@ -184,5 +184,5 @@ Responder:
 # PowerShell
 runas:
 ```
-runas /netonly /user: domain\username powershell
+runas /netonly /user:domain\username powershell
 ```
