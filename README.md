@@ -164,3 +164,13 @@ https://hackertarget.com/tcpdump-examples/
 ```
 sqlmap -r <file.req> --risk=3 -- level=3
 ```
+
+# Responder
+Safe:
+```
+./Responder.py -I eth0 -wrf
+```
+Dangerous:
+```
+./Responder.py -I eth0 -wrfd
+```
