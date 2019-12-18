@@ -198,3 +198,9 @@ SMB:
 ```
 hydra -L <usernames.txt> -P <passwords.txt> -o hydra-out.txt -u smb://<IP>
 ```
+
+# Ruler
+
+```
+.\ruler-win64.exe --domain <domain> brute --users .\usernames.txt --passwords .\passwords.txt
+```
