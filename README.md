@@ -204,3 +204,10 @@ hydra -L <usernames.txt> -P <passwords.txt> -o hydra-out.txt -u smb://<IP>
 ```
 .\ruler-win64.exe --domain <domain> brute --users .\usernames.txt --passwords .\passwords.txt
 ```
+
+# Masscan
+
+```
+masscan -p1-65535,U:1-65535 --open --banners -oB massscan-all-tcp-udp <IP>
+masscan --readscan massscan-all-tcp-udp
+```
