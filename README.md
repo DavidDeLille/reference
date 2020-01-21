@@ -136,6 +136,7 @@ zipalign -v 4 <package.apk> <package-align.apk>
 |---                     |---                                   |
 | List connected devices | ```adb devices [-l]              ``` |
 | Install apk via adb    | ```adb install <package.apk>     ``` |
+| Ininstall apk via adb  | ```adb uninstall <package-name>  ``` |
 | Spawn Android shell    | ```adb shell                     ``` |
 | Display log            | ```adb logcat [-f log.txt]       ``` |
 | Download file          | ```adb pull <remote-file> <local>``` |
