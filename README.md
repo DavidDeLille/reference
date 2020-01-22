@@ -150,6 +150,8 @@ zipalign -v 4 <package.apk> <package-align.apk>
 | Instrument app  | ```objection patchapk --source <package.apk> ``` |
 | Start objection | ```objection explore```                          |
 
+Note: Don't patch an APK in a shared folder! Copy it to /tmp and run ```objection patchapk``` there instead.
+
 # SSRF
 
 ## TCPdump
