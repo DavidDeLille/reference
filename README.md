@@ -243,7 +243,7 @@ apt-get install crackmapexec
 
 Find shares:
 ```
-crackmapexec smb -d <domain> -u <user> -p <password> --shares
+crackmapexec smb -d <domain> -u <user> -p <password> 10.10.10.0/24 --shares
 ```
 
 Dump NTDS:
