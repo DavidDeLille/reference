@@ -181,9 +181,23 @@ Dangerous:
 # Hashcat
 Responder:
 ```
-~/Tools/fanspeedSetNew.sh -s 100; ~/Tools/hashcat/hashcat64.bin -m 5600 -O -w 3 responder1.txt -o responder-cracked.txt /media/data/Wordlists/linkedin.txt -r ~/Tools/hashcat/rules/OneRuleToRuleThemAll.rule 
+~/Tools/fanspeedSetNew.sh -s 100; ~/Tools/hashcat/hashcat64.bin -m 5600 -O -w 3 --session <session-name> responder.txt -o responder-cracked.txt /media/data/Wordlists/linkedin.txt -r ~/Tools/hashcat/rules/OneRuleToRuleThemAll.rule 
 ```
 
+NTLM (NTDS.DIT):
+```
+~/Tools/fanspeedSetNew.sh -s 100; ~/Tools/hashcat/hashcat64.bin -m 1000 -O -w 3 --session <session-name> ntlm.txt -o ntlm-cracked.txt /media/data/Wordlists/linkedin.txt -r ~/Tools/hashcat/rules/OneRuleToRuleThemAll.rule 
+```
+
+Print passwords in pot file:
+```
+~/Tools/fanspeedSetNew.sh -s 100; ~/Tools/hashcat/hashcat64.bin hashes.txt --show
+```
+
+Restore a session:
+```
+~/Tools/fanspeedSetNew.sh -s 100; ~/Tools/hashcat/hashcat64.bin --session <session-name> --restore
+```
 # PowerShell
 runas:
 ```
