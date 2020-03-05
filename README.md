@@ -189,6 +189,11 @@ NTLM (NTDS.DIT):
 ~/Tools/fanspeedSetNew.sh -s 100; ~/Tools/hashcat/hashcat64.bin -m 1000 -O -w 3 --session <session-name> ntlm.txt -o ntlm-cracked.txt /media/data/Wordlists/linkedin.txt -r ~/Tools/hashcat/rules/OneRuleToRuleThemAll.rule 
 ```
 
+LM:
+```
+~/Tools/fanspeedSetNew.sh -s 100; ~/Tools/hashcat/hashcat64.bin -m 3000 -O -w 3 --session <session-name> lm.txt -o lm-cracked.txt -a 3 '?a?a?a?a?a?a?a' --increment
+```
+
 Print passwords in pot file:
 ```
 ~/Tools/fanspeedSetNew.sh -s 100; ~/Tools/hashcat/hashcat64.bin hashes.txt --show
