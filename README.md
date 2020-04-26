@@ -270,7 +270,8 @@ Dump NTDS:
 crackmapexec smb -d <domain> -u <user> -p <password> <Domain Controller IP> --ntds drsuapi
 ```
 
-# Azucar ()
+# Azucar (https://github.com/nccgroup/azucar)
+Get TenantID, then login in with password:
 ```
 .\Azucar.ps1 -ResolveTenantUserName <user@domain.com>
 .\Azucar.ps1 -TenantID <tenantID> -ForceAuth
