@@ -274,5 +274,5 @@ crackmapexec smb -d <domain> -u <user> -p <password> <Domain Controller IP> --nt
 Get TenantID, then login in with password:
 ```
 .\Azucar.ps1 -ResolveTenantUserName <user@domain.com>
-.\Azucar.ps1 -TenantID <tenantID> -ForceAuth
+.\Azucar.ps1 -TenantID <tenantID> -ForceAuth -ExportTo CSV,JSON,XML,EXCEL
 ```
