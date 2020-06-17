@@ -276,3 +276,16 @@ Get TenantID, then login in with password:
 .\Azucar.ps1 -ResolveTenantUserName <user@domain.com>
 .\Azucar.ps1 -TenantID <tenantID> -ForceAuth -ExportTo CSV,JSON,XML,EXCEL
 ```
+
+# Scout Suite
+To get the Tenant-ID, log in to the portal and search for "tenant properties".
+
+No MFA  
+```
+python scout.py azure --user-account
+```
+With MFA  
+```
+python scout.py azure --user-account-browser --tenant <tenant-id>
+```
+https://github.com/nccgroup/ScoutSuite/wiki/Azure
