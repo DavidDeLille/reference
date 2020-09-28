@@ -159,6 +159,10 @@ Listen on port 443:
 ```
 tcpdump -i eth0 -nn -s0 -v port 443
 ```
+Listen on all but port 22
+```
+tcpdump -i eth0 -nn -s0 -v port not 22
+```
 
 https://hackertarget.com/tcpdump-examples/
 
