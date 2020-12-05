@@ -293,3 +293,35 @@ With MFA
 python scout.py azure --user-account-browser --tenant <tenant-id>
 ```
 https://github.com/nccgroup/ScoutSuite/wiki/Azure
+
+# Amass
+https://github.com/OWASP/Amass/
+
+## Intel
+Check sources
+```
+amass intel -list
+```
+
+Intel ASN for org name
+```
+amass intel -org <org_name>
+```
+
+Intel IP address
+Note: best to run individually for each IP address.
+```
+amass intel -active -p 80,443 -ip -ipv4 -ipv6 -src -addr <IP_address>
+```
+
+Intel domain
+Note: best to run individually for each domain.
+```
+amass intel -active -whois -src -d <domain>
+```
+
+## Enum
+Enum domain
+```
+amass enum -active -brute -ip -ipv4 -ipv6 -nf <known-subdomains.txt> -oA <amass-enum> -p <ports> -src -d <domain>
+```
