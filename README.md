@@ -86,6 +86,11 @@ C:\Windows\System32\spool\drivers\color\
 
 ## Powershell
 
+### runas
+```
+runas /netonly /user:domain\username powershell
+```
+
 ### Is Poserwhell running in Constrained language mode?
 ```
 $ExecutionContext.SessionState.LanguageMode
@@ -206,11 +211,6 @@ Print passwords in pot file:
 Restore a session:
 ```
 ~/Tools/fanspeedSetNew.sh -s 100; ~/Tools/hashcat/hashcat64.bin --session <session-name> --restore
-```
-# PowerShell
-runas:
-```
-runas /netonly /user:domain\username powershell
 ```
 
 # John
