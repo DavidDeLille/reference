@@ -325,3 +325,9 @@ Enum domain
 ```
 amass enum -active -brute -ip -ipv4 -ipv6 -nf <known-subdomains.txt> -oA <amass-enum> -p <ports> -src -d <domain>
 ```
+
+# Dirsearch
+
+```
+python3 dirsearch.py -r -R 2 -t 30 -F -e <extensions> -x 444 -u <URL>
+```
