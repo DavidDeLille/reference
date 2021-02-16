@@ -356,5 +356,5 @@ sudo airodump-ng --beacons --wps --output-format pcap,csv,gps,kismet,netxml,logc
 
 # Ping sweep IP range
 ```
-fping -ag 10.1.1.0/24
+fping -ag 10.1.1.0/24 2>/dev/null
 ```
