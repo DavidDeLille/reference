@@ -348,3 +348,13 @@ amass enum -active -brute -ip -ipv4 -ipv6 -nf <known-subdomains.txt> -oA <amass-
 ```
 python3 dirsearch.py -r -R 2 -t 30 -F -e <extensions> -x 444 -u <URL>
 ```
+
+# Airodump
+```
+sudo airodump-ng --beacons --wps --output-format pcap,csv,gps,kismet,netxml,logcsv --band abg -w outfilename wlan0mon
+```
+
+# Ping sweep IP range
+```
+fping -ag 10.1.1.0/24
+```
