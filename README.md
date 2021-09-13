@@ -86,9 +86,10 @@ C:\Windows\System32\spool\drivers\color\
 
 ## Powershell
 
-### runas
+### runas (+ check if creds work)
 ```
 runas /netonly /user:domain\username powershell
+dsquery user -s <DC IP address>
 ```
 
 ### Is Poserwhell running in Constrained language mode?
