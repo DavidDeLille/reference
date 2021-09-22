@@ -359,3 +359,10 @@ sudo airodump-ng --beacons --wps --output-format pcap,csv,gps,kismet,netxml,logc
 ```
 fping -ag 10.1.1.0/24 2>/dev/null
 ```
+
+# calculate NTLM hashes
+```python
+import hashlib,binascii 
+ntlm = lambda x: print(binascii.hexlify(hashlib.new('md4', x.encode('utf-16le')).digest()).decode('utf-8'))
+ntlm("Password1")
+```
